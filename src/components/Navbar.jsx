@@ -1,4 +1,5 @@
 import { useState } from "react";
+import {motion} from "framer-motion";
 
 export default function NavBar() {
     const [navbar, setNavbar] = useState(false);
@@ -59,20 +60,30 @@ export default function NavBar() {
             >
               <ul className="items-center justify-center space-y-8 md:flex md:space-x-6 md:space-y-0">
                 <li className="text-white font-inter font-semibold hover:text-picton-blue">
-                  <a href="www.google.com">About Me</a>
+                  <motion.a
+                    whileHover={{
+                      x: 500,
+                      scale: 1.2,
+                      transition: { ease: "easeOut", duration: 2 },
+                    }}
+                    whileTap={{ scale: 0.9 }}
+                    href="www.google.com"
+                  >
+                    About Me
+                  </motion.a>
                 </li>
-                <li className="text-white font-inter font-semibold hover:text-indigo-200">
+                <li className="text-white font-inter font-semibold hover:text-amber">
                   <a href="www.google.com">Skills</a>
                 </li>
-                <li className="text-white font-inter font-semibold hover:text-indigo-200">
+                <li className="text-white font-inter font-semibold hover:text-yellow-green">
                   <a href="www.google.com">Projects</a>
                 </li>
-                <li className="text-white font-inter font-semibold hover:text-indigo-200">
+                <li className="text-white font-inter font-semibold hover:text-vermillion">
                   <a href="www.google.com">Contact Me</a>
                 </li>
               </ul>
 
-              <div className="mt-3 space-y-2 lg:hidden md:inline-block">
+              <div className="mt-3 space-y-2 lg:hidden md:inline-block md:hidden">
                 <a
                   href="www.google.com"
                   className="inline-block w-full px-4 py-2 text-center font-inter text-sm font-bold text-eerie-black bg-tropical-gradient rounded-full shadow hover:bg-gray-800"

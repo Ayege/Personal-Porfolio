@@ -7,6 +7,8 @@ module.exports = {
         "eerie-black": "#212121",
         "vermillion": "#F44336",
         "picton-blue": "#03a9f4",
+        "amber": "#ffc107",
+        "yellow-green": "#8bc34a",
       },
       backgroundImage: {
         "tropical-gradient":
