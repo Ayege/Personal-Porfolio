@@ -4,11 +4,11 @@ import Navbar from './components/Navbar'
 
 function App() {
   return (
-    <div>
+    <div className="bg-eerie-black ">
       <Navbar></Navbar>
       <Hero></Hero>
     </div>
-  )
+  );
 }
 
 export default App
