@@ -41,6 +41,7 @@ https://www.figma.com/file/vvwfALwxTkvaijdwbKS8N2/Personal-Porfolio?node-id=0%3A
 - React
 - Tailwind CSS
 - React Router
+- Framer Motion
 
 ## Licence
 
