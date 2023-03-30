@@ -1,3 +1,9 @@
+This is my personal porfolio website, responsively designed in figma and programmed in react-tailwind.
+
+
+  ![image](https://user-images.githubusercontent.com/43933845/228845258-b80e7d63-d00f-454f-887c-ca0905e6946c.png)
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
