@@ -1,13 +1,18 @@
 import React from "react";
 import heroImg from "../assets/ayege.png";
+import heroSmall from "../assets/heroSmall.png";
+import { useMediaQuery } from "@react-hook/media-query";
 import { motion } from "framer-motion";
 
 function Hero() {
+
+  const matches = useMediaQuery("(min-width: 475px)");
+
   return (
-    <div className="w-full flex justify-around mx-12 shadow py-20">
+    <div className="w-full flex justify-around mx-6 py-8 lg:mx-12 shadow lg:py-20">
       <div className="flex justify-between flex-col-reverse  lg:max-w-7xl lg:flex-row md:flex-row ">
         <div className="w-3/4 lg:w-2/5">
-          <h1 className="font-inter text-white font-black mb-6 sm:text-2xl lg:text-5xl lg:leading-relaxed md:text-5xl">
+          <h1 className="font-inter text-white font-black mb-6 md:text-5xl lg:text-5xl lg:leading-relaxed ">
             <motion.span className="p-0 m-0 bg-tropical-gradient text-transparent bg-clip-text">
               Hello, I’m Ayesha,{" "}
             </motion.span>
@@ -43,11 +48,14 @@ function Hero() {
           </div>
         </div>
         <motion.div
-          className="w-fit"
+          className="w-fit py-[-100px]"
           animate={{ x: [-100, 0] }}
           transition={{ ease: "easeOut", duration: 0.75 }}
         >
-          <img src={heroImg} alt="Ayesha the developer"></img>
+          <img
+            src={matches ? heroImg : heroSmall}
+            alt="Ayesha the developer"
+          ></img>
         </motion.div>
       </div>
     </div>
