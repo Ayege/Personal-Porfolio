@@ -5,9 +5,9 @@ import { motion } from "framer-motion";
 function Hero() {
   return (
     <div className="w-full flex justify-around mx-12 shadow py-20">
-      <div className="flex flex-row justify-between lg:max-w-7xl">
-        <div className="w-2/5">
-          <h1 className="font-inter lg:text-5xl mb-6 lg:leading-relaxed text-white font-black">
+      <div className="flex justify-between flex-col-reverse  lg:max-w-7xl lg:flex-row md:flex-row ">
+        <div className="w-3/4 lg:w-2/5">
+          <h1 className="font-inter text-white font-black mb-6 sm:text-2xl lg:text-5xl lg:leading-relaxed md:text-5xl">
             <motion.span className="p-0 m-0 bg-tropical-gradient text-transparent bg-clip-text">
               Hello, I’m Ayesha,{" "}
             </motion.span>
@@ -42,9 +42,11 @@ function Hero() {
             </motion.div>
           </div>
         </div>
-        <motion.div className="w-fit"
+        <motion.div
+          className="w-fit"
           animate={{ x: [-100, 0] }}
-          transition={{ ease: "easeOut", duration: .75 }}>
+          transition={{ ease: "easeOut", duration: 0.75 }}
+        >
           <img src={heroImg} alt="Ayesha the developer"></img>
         </motion.div>
       </div>
