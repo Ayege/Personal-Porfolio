@@ -10,20 +10,20 @@ This is my personal portfolio website built using React and Tailwind CSS. The we
 
 1. Clone this repository:
 
-## git clone https://github.com/ayege/personal-portfolio.git
+`git clone https://github.com/ayege/personal-portfolio.git`
 
 2. Install the dependencies:
 
-## cd personal-porfolio
-## npm install
+`cd personal-porfolio`
+`npm install`
 
 3. Start the development server:
 
-### npm start
+`npm start`
 
 4. Open the website in your browser:
 
-## http://localhost:3000
+`http://localhost:3000`
 
 
 ## Features
