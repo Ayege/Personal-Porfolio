@@ -28,8 +28,8 @@ This is my personal portfolio website built using React and Tailwind CSS. The we
 
 ## Features
 
---Home page with a brief introduction, skills, and a call-to-action section.
---About page with information about me, my education, and work experience.
---Projects page showcasing my recent projects with details and links.
---Contact page with a contact form and social media links.
+- Home page with a brief introduction, skills, and a call-to-action section.
+- About page with information about me, my education, and work experience.
+- Projects page showcasing my recent projects with details and links.
+- Contact page with a contact form and social media links.
 
