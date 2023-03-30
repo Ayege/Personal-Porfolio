@@ -37,6 +37,7 @@ This is my personal portfolio website built using React and Tailwind CSS. The we
 
 - React
 - Tailwind CSS
+- React Router
 
 ## Licence
 
