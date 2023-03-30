@@ -2,9 +2,9 @@
 
 This is my personal portfolio website built using React and Tailwind CSS. The website showcases my skills, experience, and projects. This website was designed from scratch in figma.
 
-
-  ![image](https://user-images.githubusercontent.com/43933845/228845258-b80e7d63-d00f-454f-887c-ca0905e6946c.png)
-
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/43933845/228845258-b80e7d63-d00f-454f-887c-ca0905e6946c.png" alt="Ayesha's Personal Porfolio"/>
+</p>
 
 # Getting Started
 
@@ -33,3 +33,11 @@ This is my personal portfolio website built using React and Tailwind CSS. The we
 - Projects page showcasing my recent projects with details and links.
 - Contact page with a contact form and social media links.
 
+## Technologies Used
+
+- React
+- Tailwind CSS
+
+## Licence
+
+This project is licensed under the MIT License. See the LICENSE file for details.
