@@ -1,10 +1,13 @@
-# My Personal Portfolio Website
+# Ayesha - Personal Portfolio Website
 
-This is my personal portfolio website built using React and Tailwind CSS. The website showcases my skills, experience, and projects. This website was designed from scratch in figma.
+This project is a personal portfolio website designed in Figma and built using React and Tailwind. As a professional or student looking for job opportunities, you need a website that showcases your skills, experience, and portfolio projects to potential clients and employers. A personal portfolio website is a great way to stand out in a crowded job market and demonstrate your expertise in your field.
 
 <p align="center">
   <img src="https://user-images.githubusercontent.com/43933845/228845258-b80e7d63-d00f-454f-887c-ca0905e6946c.png" alt="Ayesha's Personal Porfolio"/>
 </p>
+
+Figma design:
+https://www.figma.com/file/vvwfALwxTkvaijdwbKS8N2/Personal-Porfolio?node-id=0%3A1&t=jyGJuHjxBlnskbHB-1
 
 # Getting Started
 
