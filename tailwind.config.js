@@ -14,7 +14,7 @@ module.exports = {
         'tropical-gradient':
           'linear-gradient(269.96deg, #03A9F4 27.76%, #FFC107 64.6%, #F44336 99.95%)',
         'lines': 'url("../src/assets/lines.svg")',
-        'linesSM': 'url("../src/assets/lines.svg")',
+        'ellipse': 'url("../src/assets/Ellipse1.svg")',
       },
     },
   },

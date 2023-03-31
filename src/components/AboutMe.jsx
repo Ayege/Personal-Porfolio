@@ -1,24 +1,21 @@
 import React from "react";
-import heroImg from "../assets/ayege.png";
-import heroSmall from "../assets/heroSmall.png";
+import ayesha from "../assets/ayesha2.png";
+import cube from "../assets/cubes.svg"
 import { useMediaQuery } from "@react-hook/media-query";
 import { motion } from "framer-motion";
 
 function Hero() {
-
   const matches = useMediaQuery("(min-width: 475px)");
 
   return (
     <div className="w-full flex justify-around mx-6 py-8 lg:mx-12  lg:py-20">
-      <div className="flex justify-between flex-col-reverse  lg:max-w-7xl lg:flex-row md:flex-row ">
+      <div className="flex justify-between flex-col-reverse  lg:max-w-7xl lg:flex-row-reverse md:flex-row ">
         <div className="w-11/12 md:w-2/5">
-          <h1 className="font-inter text-white font-black text-5xl mb-6 leading-loose">
+          <h2 className="font-inter text-white font-black text-5xl mb-6 leading-loose">
             <motion.span className="bg-tropical-gradient text-transparent bg-clip-text">
-              Hello, I’m Ayesha,
+              Bit about me
             </motion.span>
-            <br></br>
-            Full stack Developer and Web Designer.
-          </h1>
+          </h2>
           <p className="font-inter text-white text-left mb-10 md:text-justify">
             A Full stack developer and web designer. I am a passionate web
             developer with a focus on creating beautiful, functional, and
@@ -35,27 +32,21 @@ function Hero() {
             >
               <a href="www.google.com">Contact Me</a>
             </motion.div>
-            <motion.div
-              whileHover={{
-                scale: 1.1,
-              }}
-              onHoverStart={(e) => {}}
-              onHoverEnd={(e) => {}}
-              className="px-6 py-3 text-white font-bold font-inter text-sm bg-vermillion rounded-full shadow hover:bg-tropical-gradient inline-block"
-            >
-              <a href="www.google.com">View Projects</a>
-            </motion.div>
           </div>
         </div>
+
         <motion.div
-          className="w-fit py-[-150px] ml-5 mb-6 md:m-auto"
+          className="w-fit mb-6 ml-[-50px] relative md:m-0"
           animate={{ x: [-100, 0] }}
           transition={{ ease: "easeOut", duration: 0.75 }}
         >
+          <img src={cube} className="absolute right-0"></img>
           <img
-            src={matches ? heroImg : heroSmall}
+            className="bg-ellipse bg-no-repeat bg-top"
+            src={ayesha}
             alt="Ayesha the developer"
           ></img>
+          <img src={cube} className="absolute bottom-0 left-0"></img>
         </motion.div>
       </div>
     </div>
