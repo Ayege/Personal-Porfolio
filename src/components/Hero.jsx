@@ -7,12 +7,12 @@ import { motion } from "framer-motion";
 function Hero() {
 
   const matches = useMediaQuery("(min-width: 475px)");
-
+ 
   return (
-    <div className="w-full flex justify-around mx-6 py-8 lg:mx-12  lg:py-20">
-      <div className="flex justify-between flex-col-reverse  lg:max-w-7xl lg:flex-row md:flex-row ">
-        <div className="w-11/12 md:w-2/5">
-          <h1 className="font-inter text-white font-black text-5xl mb-6 leading-loose">
+    <div className="w-full flex justify-around py-8 px-6 md:py-20">
+      <div className="flex justify-between flex-col-reverse  md:max-w-7xl lg:flex-row md:flex-row ">
+        <div className="md:w-2/5">
+          <h1 className="font-inter text-white font-black text-4xl mb-6 leading-loose">
             <motion.span className="bg-tropical-gradient text-transparent bg-clip-text">
               Hello, I’m Ayesha,
             </motion.span>

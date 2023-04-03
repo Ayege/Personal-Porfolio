@@ -1,17 +1,17 @@
 import React from "react";
 import ayesha from "../assets/ayesha2.png";
 import cube from "../assets/cubes.svg";
-import { useMediaQuery } from "@react-hook/media-query";
 import { motion } from "framer-motion";
 
 function Hero() {
-  const matches = useMediaQuery("(min-width: 475px)");
+
+  const cubes = `${cube}?t=${Date.now()}`;
 
 
   return (
-    <div className="w-full flex justify-around mx-6 py-8 lg:mx-12  lg:py-20">
-      <div className="flex justify-between flex-col-reverse md:flex-row-reverse  lg:max-w-7xl lg:flex-row-reverse ">
-        <div className="w-11/12 md:w-2/5">
+    <div className="w-full flex justify-around px-6 py-8 md:py-20">
+      <div className="flex justify-between flex-col-reverse  md:max-w-7xl md:flex-row-reverse ">
+        <div className="md:w-1/2">
           <h2 className="font-inter text-white font-black text-5xl mb-6 leading-loose">
             <motion.span className="bg-tropical-gradient text-transparent bg-clip-text">
               Bit about me
@@ -40,20 +40,20 @@ function Hero() {
         </div>
 
         <motion.div
-          className="w-fit mb-6 ml-[-50px] relative md:m-0"
+          className="w-fit mb-6 relative  md:m-0"
           animate={{ x: [-100, 0] }}
           transition={{ ease: "easeOut", duration: 0.75 }}
         >
-          <img src={cube} alt="cubes" className="absolute right-0"></img>
+          <img src={cubes} alt="cubes" className="absolute right-0 w-24  md:w-48"></img>
           <img
             className="bg-ellipse bg-no-repeat bg-top"
             src={ayesha}
             alt="Ayesha the developer"
           ></img>
           <img
-            src={cube}
+            src={cubes}
             alt="cubes"
-            className="absolute bottom-0 left-0"
+            className="absolute bottom-0 left-0  w-24 md:w-48"
           ></img>
         </motion.div>
       </div>
