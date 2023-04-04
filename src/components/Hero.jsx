@@ -3,16 +3,18 @@ import heroImg from "../assets/ayege.png";
 import heroSmall from "../assets/heroSmall.png";
 import { useMediaQuery } from "@react-hook/media-query";
 import { motion } from "framer-motion";
+import line from "../assets/lines.svg";
 
 function Hero() {
-
   const matches = useMediaQuery("(min-width: 475px)");
- 
+  const lines = `${line}?t=${Date.now()}`;
+
   return (
-    <div className="w-full flex justify-around py-8 px-6 md:py-20">
-      <div className="flex justify-between flex-col-reverse  md:max-w-7xl lg:flex-row md:flex-row ">
+    <div className="w-full relative flex justify-around py-4 px-6 md:py-20">
+      <img src={lines} alt="background lines" className="z-0 absolute md:h-[43em] md:top-[-5rem] md:right-0"></img>
+      <div className="z-10 flex justify-between flex-col-reverse  md:max-w-7xl lg:flex-row md:flex-row ">
         <div className="md:w-2/5">
-          <h1 className="font-inter text-white font-black text-4xl mb-6 leading-loose">
+          <h1 className="font-inter text-white font-black text-5xl mb-6 leading-loose">
             <motion.span className="bg-tropical-gradient text-transparent bg-clip-text">
               Hello, I’m Ayesha,
             </motion.span>

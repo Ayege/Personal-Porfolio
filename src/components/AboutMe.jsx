@@ -46,7 +46,7 @@ function Hero() {
         >
           <img src={cubes} alt="cubes" className="absolute right-0 w-24  md:w-48"></img>
           <img
-            className="bg-ellipse bg-no-repeat bg-top"
+            className="w-fit bg-contain bg-ellipse bg-no-repeat bg-top"
             src={ayesha}
             alt="Ayesha the developer"
           ></img>
