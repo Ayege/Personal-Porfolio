@@ -4,11 +4,21 @@ import triangle from "../assets/triangles.svg";
 import { motion } from "framer-motion";
 import Ulticabinet from "../assets/Ulticabinet.png";
 import MPL from "../assets/MPL.png";
-import Lucky7 from "../assets/Lucky7.png"
+import Lucky7 from "../assets/Lucky7.png";
+import { useInView } from "react-intersection-observer";
 
 function Projects() {
   const [isSmallScreen, setIsSmallScreen] = useState(false);
   const triangles = `${triangle}?t=${Date.now()}`;
+      const [ref] = useInView({
+      threshold: 0.2, // Set threshold to 20%
+    });
+
+
+  const cardVariants = {
+    hidden: { opacity: 0, y: 20 },
+    visible: { opacity: 1, y: 0 },
+  };
 
   useEffect(() => {
     const mediaQuery = window.matchMedia("(max-width: 640px)"); // define a media query for small screens
@@ -19,7 +29,10 @@ function Projects() {
   }, []);
 
   return (
-    <div className="w-full flex justify-around relative px-6 py-8 md:pt-24 md:pb-40">
+    <div
+      className="w-full flex justify-around relative px-6 py-8 md:pt-24 md:pb-40"
+      ref={ref}
+    >
       <img
         src={triangles}
         alt="triangles"
@@ -35,24 +48,45 @@ function Projects() {
         </div>
         <div className="w-full">
           <div className="flex flex-col justify-between gap-4 my-3 md:flex-row">
-            <Card
-              color="#1DC9FF"
-              img={Ulticabinet}
-              title="Ulticabinet.com"
-              text="This is a Wordpress responsive website using elementor for a software solutions company. The website has multiple animations, functional forms, zendesk integration, google statistics and displays in different languages."
-            ></Card>
-            <Card
-              color="#8BC34A"
-              title="Movimiento Profesionales con Leonel"
-              img={MPL}
-              text="This is a Worpress with Elementor site of a local politician with functional forms and responsive design."
-            ></Card>
-            <Card
-              color="#F44336"
-              img={Lucky7}
-              title="Lucky7 - Tattoo Studio"
-              text="Responsive web app built using Node.js, Express, Bootstrap and designed in Bootstrap Studio 5 that allows users to schedule their appointments."
-            ></Card>
+            <motion.div
+              variants={cardVariants}
+              initial="hidden"
+              animate="visible"
+              transition={{ delay: 0.2 }}
+            >
+              <Card
+                color="#1DC9FF"
+                img={Ulticabinet}
+                title="Ulticabinet.com"
+                text="This is a Wordpress responsive website using elementor for a software solutions company. The website has multiple animations, functional forms, zendesk integration, google statistics and displays in different languages."
+              ></Card>
+            </motion.div>
+            <motion.div
+              variants={cardVariants}
+              initial="hidden"
+              animate="visible"
+              transition={{ delay: 0.4 }}
+            >
+              <Card
+                color="#8BC34A"
+                title="Movimiento Profesionales con Leonel"
+                img={MPL}
+                text="This is a Worpress with Elementor site of a local politician with functional forms and responsive design."
+              ></Card>
+            </motion.div>
+            <motion.div
+              variants={cardVariants}
+              initial="hidden"
+              animate="visible"
+              transition={{ delay: 0.6 }}
+            >
+              <Card
+                color="#F44336"
+                img={Lucky7}
+                title="Lucky7 - Tattoo Studio"
+                text="Responsive web app built using Node.js, Express, Bootstrap and designed in Bootstrap Studio 5 that allows users to schedule their appointments."
+              ></Card>
+            </motion.div>
           </div>
           <div>
             {isSmallScreen ? (
@@ -70,24 +104,47 @@ function Projects() {
               </div>
             ) : (
               <div className="flex flex-col justify-between gap-4 md:flex-row">
-                <Card
-                  color="#FFC107"
-                  title="Movimiento Profesionales con Leonel"
-                  img={MPL}
-                  text="This is a Worpress with Elementor site of a local politician with functional forms and responsive design."
-                ></Card>
-                <Card
-                  color="#00759D"
-                  img={MPL}
-                  title="Lucky7 - Tattoo Studio"
-                  text="Responsive web app built using Node.js, Express, Bootstrap and designed in Bootstrap Studio 5 that allows users to schedule their appointments."
-                ></Card>
-                <Card
-                  color="#F16529"
-                  img={MPL}
-                  title="Lucky7 - Tattoo Studio"
-                  text="This is a responsive app built using Node.js, Express, Bootstrap and designed in Bootstrap Studio 5 that allows users to schedule appointments."
-                ></Card>
+                <motion.div
+                  variants={cardVariants}
+                  initial="hidden"
+                  animate="visible"
+                  transition={{ delay: 0.8 }}
+                >
+                  <Card
+                    color="#FFC107"
+                    title="Movimiento Profesionales con Leonel"
+                    img={MPL}
+                    text="This is a Worpress with Elementor site of a local politician with functional forms and responsive design."
+                  ></Card>
+                </motion.div>
+                <motion.div
+                  variants={cardVariants}
+                  initial="hidden"
+                  animate="visible"
+                  transition={{ delay: 1 }}
+                >
+                  {" "}
+                  <Card
+                    color="#00759D"
+                    img={MPL}
+                    title="Lucky7 - Tattoo Studio"
+                    text="Responsive web app built using Node.js, Express, Bootstrap and designed in Bootstrap Studio 5 that allows users to schedule their appointments."
+                  ></Card>
+                </motion.div>
+                <motion.div
+                  variants={cardVariants}
+                  initial="hidden"
+                  animate="visible"
+                  transition={{ delay: 1.2 }}
+                >
+                  {" "}
+                  <Card
+                    color="#F16529"
+                    img={MPL}
+                    title="Lucky7 - Tattoo Studio"
+                    text="This is a responsive app built using Node.js, Express, Bootstrap and designed in Bootstrap Studio 5 that allows users to schedule appointments."
+                  ></Card>
+                </motion.div>
               </div>
             )}
           </div>

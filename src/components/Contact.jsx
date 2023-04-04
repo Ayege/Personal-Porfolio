@@ -125,11 +125,11 @@ function Contact() {
             </button>
           </div>
         </div>
-        <div className="w-full relative  items-center justify-center font-inter text-white text-xl font-bold py-4 md:w-1/2">
-          <form ref={form} onSubmit={sendEmail}>
+        <div className="w-full relative items-center justify-center font-inter text-white text-xl font-bold py-4 md:w-1/2">
+          <form ref={form} onSubmit={sendEmail} >
             <label className="block py-4 ">Name</label>
             <input
-              className="block w-full rounded-lg h-10 "
+              className="z-10 block w-full bg-white rounded-lg h-10 "
               type="text"
               name="user_name"
             />
@@ -144,18 +144,18 @@ function Contact() {
               name="message"
               className="Z-10 block w-full z-10 rounded-lg h-24 "
             />
-            <div className="flex flex-row justify-center Z-10 py-10 align-middle ">
+            <div className="flex flex-row justify-center Z-20 py-10 align-middle ">
               <input
                 type="submit"
                 value="Submit"
-                className="block Z-10 w-full px-6 py-2 text-white text-2xl font-bold font-inter bg-tropical-gradient rounded-full shadow hover:bg-gray-800"
+                className="inline-block bg-white w-full px-6 py-2 text-2xl font-bold font-inter bg-tropical-gradient rounded-full shadow hover:bg-gray-800"
               />
             </div>
           </form>
           <img
             src={diamonds}
             alt="Diamond bg"
-            className="z-0 absolute top-0 h-full"
+            className="z-0 absolute top-10 w-full"
           ></img>
         </div>
       </div>

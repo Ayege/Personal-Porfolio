@@ -4,18 +4,35 @@ import heroSmall from "../assets/heroSmall.png";
 import { useMediaQuery } from "@react-hook/media-query";
 import { motion } from "framer-motion";
 import line from "../assets/lines.svg";
+import { useInView } from "react-intersection-observer";
 
 function Hero() {
   const matches = useMediaQuery("(min-width: 475px)");
   const lines = `${line}?t=${Date.now()}`;
+  const [ref, inView] = useInView({
+    threshold: 0.2, // Set threshold to 20%
+  });
+
 
   return (
-    <div className="w-full relative flex justify-around py-4 px-6 md:py-20">
-      <img src={lines} alt="background lines" className="z-0 absolute md:h-[43em] md:top-[-5rem] md:right-0"></img>
+    <div
+      className="w-full relative flex justify-around py-4 px-6 md:py-20"
+      ref={ref}
+    >
+      <img
+        src={lines}
+        alt="background lines"
+        className="z-0 absolute md:h-[43em] md:top-[-5rem] md:right-0"
+      ></img>
       <div className="z-10 flex justify-between flex-col-reverse  md:max-w-7xl lg:flex-row md:flex-row ">
-        <div className="md:w-2/5">
+        <motion.div
+          className="md:w-2/5"
+          animate={{ opacity: inView ? 1 : 0 }}
+          transition={{ duration: 1.5}}
+        >
           <h1 className="font-inter text-white font-black text-5xl mb-6 leading-loose">
-            <motion.span className="bg-tropical-gradient text-transparent bg-clip-text">
+            <motion.span className="bg-tropical-gradient text-transparent bg-clip-text"
+            transition={{duration:0.5, ease:"easeInOut"}}>
               Hello, I’m Ayesha,
             </motion.span>
             <br></br>
@@ -48,7 +65,7 @@ function Hero() {
               <a href="www.google.com">View Projects</a>
             </motion.div>
           </div>
-        </div>
+        </motion.div>
         <motion.div
           className="w-fit py-[-150px] ml-5 mb-6 md:m-auto"
           animate={{ x: [-100, 0] }}
