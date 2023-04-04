@@ -57,9 +57,9 @@ function AboutMe() {
                 scale: 1.1,
               }}
               onHoverStart={(e) => {}}
+              onHoverEnd={(e) => {}}
               animate={{ opacity: inView ? 1 : 0 }}
               transition={{ duration: 0.7 }}
-              onHoverEnd={(e) => {}}
               className="px-6 py-3 text-white font-bold font-inter text-sm bg-tropical-gradient rounded-full shadow hover:bg-gray-800 inline-block"
             >
               <a href="www.google.com">Download CV</a>

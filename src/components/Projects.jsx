@@ -50,6 +50,11 @@ function Projects() {
           <div className="flex flex-col justify-between gap-4 my-3 md:flex-row">
             <motion.div
               variants={cardVariants}
+              whileHover={{
+                scale: 1.1,
+              }}
+              onHoverStart={(e) => {}}
+              onHoverEnd={(e) => {}}
               initial="hidden"
               animate="visible"
               transition={{ delay: 0.2 }}
@@ -62,6 +67,11 @@ function Projects() {
               ></Card>
             </motion.div>
             <motion.div
+              whileHover={{
+                scale: 1.1,
+              }}
+              onHoverStart={(e) => {}}
+              onHoverEnd={(e) => {}}
               variants={cardVariants}
               initial="hidden"
               animate="visible"
@@ -75,6 +85,11 @@ function Projects() {
               ></Card>
             </motion.div>
             <motion.div
+              whileHover={{
+                scale: 1.1,
+              }}
+              onHoverStart={(e) => {}}
+              onHoverEnd={(e) => {}}
               variants={cardVariants}
               initial="hidden"
               animate="visible"
@@ -105,6 +120,11 @@ function Projects() {
             ) : (
               <div className="flex flex-col justify-between gap-4 md:flex-row">
                 <motion.div
+                  whileHover={{
+                    scale: 1.1,
+                  }}
+                  onHoverStart={(e) => {}}
+                  onHoverEnd={(e) => {}}
                   variants={cardVariants}
                   initial="hidden"
                   animate="visible"
@@ -118,12 +138,16 @@ function Projects() {
                   ></Card>
                 </motion.div>
                 <motion.div
+                  whileHover={{
+                    scale: 1.1,
+                  }}
+                  onHoverStart={(e) => {}}
+                  onHoverEnd={(e) => {}}
                   variants={cardVariants}
                   initial="hidden"
                   animate="visible"
                   transition={{ delay: 1 }}
                 >
-                  {" "}
                   <Card
                     color="#00759D"
                     img={MPL}
@@ -133,11 +157,15 @@ function Projects() {
                 </motion.div>
                 <motion.div
                   variants={cardVariants}
+                  whileHover={{
+                    scale: 1.1,
+                  }}
+                  onHoverStart={(e) => {}}
+                  onHoverEnd={(e) => {}}
                   initial="hidden"
                   animate="visible"
                   transition={{ delay: 1.2 }}
                 >
-                  {" "}
                   <Card
                     color="#F16529"
                     img={MPL}
