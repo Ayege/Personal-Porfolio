@@ -23,7 +23,7 @@ function Projects() {
       <img
         src={triangles}
         alt="triangles"
-        className="invisible absolute right-0 top-0 w-24 rotate-180 lg:top-20 lg:right-20 lg:visible  lg:w-48"
+        className="invisible absolute right-0 top-0 w-24 rotate-180 lg:top-20 lg:right-[10em] lg:visible  lg:w-48"
       ></img>
       <div className="flex flex-col w-full md:max-w-7xl">
         <div>
@@ -43,15 +43,15 @@ function Projects() {
             ></Card>
             <Card
               color="#8BC34A"
-              img={Lucky7}
-              title="Lucky7 - Tattoo Studio"
-              text="This is a responsive app built using Node.js, Express, Bootstrap and designed in Bootstrap Studio 5 that allows users to schedule appointments."
+              title="Movimiento Profesionales con Leonel"
+              img={MPL}
+              text="This is a Worpress with Elementor site of a local politician with functional forms and responsive design."
             ></Card>
             <Card
               color="#F44336"
               img={Lucky7}
               title="Lucky7 - Tattoo Studio"
-              text="This is a responsive app built using Node.js, Express, Bootstrap and designed in Bootstrap Studio 5 that allows users to schedule appointments."
+              text="Responsive web app built using Node.js, Express, Bootstrap and designed in Bootstrap Studio 5 that allows users to schedule their appointments."
             ></Card>
           </div>
           <div>
@@ -80,7 +80,7 @@ function Projects() {
                   color="#00759D"
                   img={MPL}
                   title="Lucky7 - Tattoo Studio"
-                  text="This is a responsive app built using Node.js, Express, Bootstrap and designed in Bootstrap Studio 5 that allows users to schedule appointments."
+                  text="Responsive web app built using Node.js, Express, Bootstrap and designed in Bootstrap Studio 5 that allows users to schedule their appointments."
                 ></Card>
                 <Card
                   color="#F16529"
@@ -96,7 +96,7 @@ function Projects() {
       <img
         src={triangles}
         alt="triangles"
-        className="invisible absolute bottom-0 left-0  w-24 lg:visible lg:bottom-20 lg:left-20 lg:w-48"
+        className="invisible absolute bottom-0 left-0  w-24 lg:visible lg:bottom-20 lg:left-[10em] lg:w-48"
       ></img>
     </div>
   );
