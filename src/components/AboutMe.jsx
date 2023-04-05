@@ -11,7 +11,7 @@ function AboutMe() {
   });
 
   return (
-    <div className="w-full flex justify-around px-6 py-8 md:py-20" ref={ref}>
+    <div className="w-full flex justify-around px-6 py-8 md:py-20 overflow-x-hidden" ref={ref}>
       <div className="flex justify-between flex-col-reverse  md:max-w-7xl md:flex-row-reverse ">
         <div className="md:w-1/2">
           <h2 className="font-inter text-white font-black text-5xl mb-6 leading-loose">
