@@ -10,7 +10,7 @@ function Hero() {
   const matches = useMediaQuery("(min-width: 475px)");
   const lines = `${line}?t=${Date.now()}`;
   const [ref, inView] = useInView({
-    threshold: 0.2, // Set threshold to 20%
+    threshold: 0.2, 
   });
 
 
@@ -27,12 +27,14 @@ function Hero() {
       <div className="z-10 flex justify-between flex-col-reverse  md:max-w-7xl lg:flex-row md:flex-row ">
         <motion.div
           className="md:w-2/5"
-          animate={{ opacity: inView ? 1 : 0 }}
-          transition={{ duration: 1.5}}
+          animate={{ opacity: inView ? 1 : 0, y: inView ? 0 : 20 }}
+          transition={{ duration: 0.75 }}
         >
           <h1 className="font-inter text-white font-black text-5xl mb-6 leading-loose">
-            <motion.span className="bg-tropical-gradient text-transparent bg-clip-text"
-            transition={{duration:0.5, ease:"easeInOut"}}>
+            <motion.span
+              className="bg-tropical-gradient text-transparent bg-clip-text"
+              transition={{ duration: 0.5, ease: "easeInOut" }}
+            >
               Hello, I’m Ayesha,
             </motion.span>
             <br></br>

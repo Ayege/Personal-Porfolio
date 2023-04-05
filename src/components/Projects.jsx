@@ -10,10 +10,9 @@ import { useInView } from "react-intersection-observer";
 function Projects() {
   const [isSmallScreen, setIsSmallScreen] = useState(false);
   const triangles = `${triangle}?t=${Date.now()}`;
-      const [ref] = useInView({
-      threshold: 0.2, // Set threshold to 20%
-    });
-
+  const [ref, inView] = useInView({
+    threshold: 0.2,
+  });
 
   const cardVariants = {
     hidden: { opacity: 0, y: 20 },
@@ -36,12 +35,16 @@ function Projects() {
       <img
         src={triangles}
         alt="triangles"
-        className="invisible absolute right-0 top-0 w-24 rotate-180 lg:top-20 lg:right-[10em] lg:visible  lg:w-48"
+        className="invisible absolute right-0 top-0 w-24 rotate-180 lg:top-20 lg:right-[5em] lg:visible  lg:w-48"
       ></img>
       <div className="flex flex-col w-full md:max-w-7xl">
         <div>
           <h2 className="font-inter text-white font-black text-5xl mb-6 leading-loose">
-            <motion.span className="bg-tropical-gradient text-transparent bg-clip-text">
+            <motion.span
+              className="bg-tropical-gradient text-transparent bg-clip-text"
+              animate={{ opacity: inView ? 1 : 0, y: inView ? 0 : 20 }}
+              transition={{ duration: 0.75 }}
+            >
               Look at my projects..
             </motion.span>
           </h2>
@@ -112,6 +115,8 @@ function Projects() {
                   }}
                   onHoverStart={(e) => {}}
                   onHoverEnd={(e) => {}}
+                  animate={{ opacity: inView ? 1 : 0, y: inView ? 0 : 20 }}
+                  transition={{ duration: 0.75 }}
                   className="px-6 py-4 text-white font-bold font-inter text-sm bg-tropical-gradient rounded-full shadow  hover:bg-gray-800 inline-block"
                 >
                   <a href="www.google.com">View more projects</a>
@@ -181,7 +186,7 @@ function Projects() {
       <img
         src={triangles}
         alt="triangles"
-        className="invisible absolute bottom-0 left-0  w-24 lg:visible lg:bottom-20 lg:left-[10em] lg:w-48"
+        className="invisible absolute bottom-0 left-0  w-24 lg:visible lg:bottom-20 lg:left-[5em] lg:w-48"
       ></img>
     </div>
   );

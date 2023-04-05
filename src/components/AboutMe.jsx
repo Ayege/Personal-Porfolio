@@ -16,8 +16,8 @@ function AboutMe() {
         <div className="md:w-1/2">
           <h2 className="font-inter text-white font-black text-5xl mb-6 leading-loose">
             <motion.span
-              animate={{ opacity: inView ? 1 : 0 }}
-              transition={{ duration: 0.7 }}
+              animate={{ opacity: inView ? 1 : 0, y: inView ? 0 : 20 }}
+              transition={{ duration: 0.75 }}
               className="bg-tropical-gradient text-transparent bg-clip-text"
             >
               Bit about me
@@ -58,8 +58,8 @@ function AboutMe() {
               }}
               onHoverStart={(e) => {}}
               onHoverEnd={(e) => {}}
-              animate={{ opacity: inView ? 1 : 0 }}
-              transition={{ duration: 0.7 }}
+              animate={{ opacity: inView ? 1 : 0, y: inView ? 0 : 20 }}
+              transition={{ duration: 0.75 }}
               className="px-6 py-3 text-white font-bold font-inter text-sm bg-tropical-gradient rounded-full shadow hover:bg-gray-800 inline-block"
             >
               <a href="www.google.com">Download CV</a>

@@ -142,9 +142,9 @@ function Contact() {
             <label className="block w-full py-4 z-10">Message</label>
             <textarea
               name="message"
-              className="Z-10 block w-full z-10 rounded-lg h-24 "
+              className="z-10 block w-full rounded-lg h-24 "
             />
-            <div className="flex flex-row justify-center Z-20 py-10 align-middle ">
+            <div className="flex flex-row justify-center z-20 py-10 align-middle ">
               <input
                 type="submit"
                 value="Submit"
