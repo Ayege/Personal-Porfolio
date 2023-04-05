@@ -23,11 +23,11 @@ function AboutMe() {
               Bit about me
             </motion.span>
           </h2>
-          <p className="font-inter text-white text-left mb-5 md:text-left md:w-4/5">
+          <p className="font-inter text-white text-left mb-5 md:text-left ">
             <motion.p
               animate={{ opacity: inView ? 1 : 0, y: inView ? 0 : 20 }}
               transition={{ duration: 0.75 }}
-              className="font-inter text-white text-left mb-5 md:text-left md:w-4/5"
+              className="font-inter text-white text-left mb-5 md:text-left"
             >
               Hello and welcome to my personal portfolio! My name is Ayesha, and
               I am a passionate web developer with a focus on creating
@@ -38,11 +38,11 @@ function AboutMe() {
               Node.js.
             </motion.p>
           </p>
-          <p className="font-inter hidden text-white text-left mb-10 md:text-left md:visible md:none md:w-4/5">
+          <p className="font-inter hidden text-white text-left mb-10 md:text-left md:block ">
             <motion.p
               animate={{ opacity: inView ? 1 : 0, y: inView ? 0 : 20 }}
               transition={{ duration: 0.75 }}
-              className="font-inter hidden text-white text-left mb-10 md:text-left md:visible md:none md:w-4/5"
+              className="font-inter invisible text-white text-left mb-10 md:text-left md:visible"
             >
               But perhaps most importantly, I am passionate about using my
               skills to make a positive impact on the world. Whether it's
@@ -55,6 +55,7 @@ function AboutMe() {
             <motion.div
               whileHover={{
                 scale: 1.1,
+                transition: { duration: 0.3 },
               }}
               onHoverStart={(e) => {}}
               onHoverEnd={(e) => {}}
@@ -62,32 +63,34 @@ function AboutMe() {
               transition={{ duration: 0.75 }}
               className="px-6 py-3 text-white font-bold font-inter text-sm bg-tropical-gradient rounded-full shadow hover:bg-gray-800 inline-block"
             >
-              <a href="www.google.com">Download CV</a>
+              <a href="../assets/Ayesha Yege - PM and Web Dev.pdf" download>
+                Download CV
+              </a>
             </motion.div>
           </div>
         </div>
 
-        <motion.div
-          className="w-fit mb-6 relative  md:m-0"
-          animate={{ x: [-100, 0] }}
-          transition={{ ease: "easeOut", duration: 0.75 }}
-        >
+        <div className="w-fit mb-6 relative  md:m-0">
           <img
             src={cubes}
             alt="cubes"
             className="absolute right-0 w-24  md:w-48  md:right-[-2em]"
           ></img>
-          <img
-            className="w-fit bg-contain bg-ellipse bg-no-repeat bg-top"
+          <motion.img
+            ref={ref}
+            initial={{ x: -200 }}
+            transition={{ duration: 1.0 }}
+            animate={inView ? { x: 0 } : { x: -200 }}
+            className="w-fit bg-contain bg-ellipse bg-no-repeat bg-top overflow-x-hidden"
             src={ayesha}
             alt="Ayesha the developer"
-          ></img>
+          ></motion.img>
           <img
             src={cubes}
             alt="cubes"
             className="absolute bottom-0 left-0  w-24 md:w-48 md:left-[-2em]"
           ></img>
-        </motion.div>
+        </div>
       </div>
     </div>
   );

@@ -1,11 +1,12 @@
 import { useState } from "react";
 import { motion } from "framer-motion";
 
+
 export default function NavBar() {
   const [navbar, setNavbar] = useState(false);
 
   return (
-    <nav className="w-full z-10 bg-eerie-black">
+    <nav className="w-full z-20 bg-eerie-black">
       <div className="justify-between px-6 mx-auto lg:px-14  md:items-center md:flex md:px-8">
         <div>
           <div className="flex items-center justify-between py-3 md:py-5 md:block">

@@ -15,11 +15,10 @@ function Skills() {
     hidden: { x: 200, opacity: 0 },
     visible: { x: 0, opacity: 1 },
   };
-    const [ref,inView] = useInView({
-      threshold: 0.2, // Set threshold to 20%
-    });
+  const [ref, inView] = useInView({
+    threshold: 0.2, // Set threshold to 20%
+  });
 
-  
   const transition = { duration: 0.6, ease: "easeInOut" };
 
   return (
@@ -33,22 +32,28 @@ function Skills() {
         className="z-0 absolute h-full md:center-20 md:top-0"
       ></img>
       <div className="flex flex-col w-full md:flex-row  md:max-w-7xl md:justify-between ">
-        <h3 className="z-10 font-inter font-black bg-tropical-gradient text-transparent bg-clip-text pb-10 text-5xl md:w-2/6 md:pr-20">
+        <motion.h3
+          className="z-10 font-inter font-black bg-tropical-gradient text-transparent bg-clip-text pb-10 text-5xl md:w-2/6 md:pr-20"
+          ref={ref}
+          initial={{ x: -500 }} // start position of image
+          transition={{ duration: 0.5 }} // animation duration
+          animate={inView ? { x: 0 } : { x: -200 }}
+        >
           What I am good at.
-        </h3>
+        </motion.h3>
         <div className="z-10 flex flex-col align-middle text-white gap-2 md:flex-row md:w-4/6">
           <motion.div
             variants={imgVariants}
             initial="hidden"
             animate={inView ? "visible" : "hidden"}
-            transition={{ delay: 0.2, ...transition }}
+            transition={{ ...transition }}
             className=" flex flex-row justify-center gap-2"
           >
             <motion.img
               variants={imgVariants}
               initial="hidden"
               animate={inView ? "visible" : "hidden"}
-              transition={{ delay: 0.4, ...transition }}
+              transition={{ delay: 0.2, ...transition }}
               src={ReactImg}
               alt="react logo"
               className="w-20 md:w-32"
@@ -83,7 +88,7 @@ function Skills() {
               variants={imgVariants}
               initial="hidden"
               animate={inView ? "visible" : "hidden"}
-              transition={{ delay: 0.8, ...transition }}
+              transition={{ delay: 1.2, ...transition }}
               src={WordpressImg}
               alt="Wordpress logo"
               className="w-20  md:w-32"

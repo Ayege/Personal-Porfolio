@@ -52,14 +52,14 @@ function Projects() {
         <div className="w-full">
           <div className="flex flex-col justify-between gap-4 my-3 md:flex-row">
             <motion.div
+              ref={ref}
               variants={cardVariants}
               whileHover={{
                 scale: 1.1,
+                transition: { duration: 0.3 },
               }}
-              onHoverStart={(e) => {}}
-              onHoverEnd={(e) => {}}
               initial="hidden"
-              animate="visible"
+              animate={inView ? "visible" : "hidden"}
               transition={{ delay: 0.2 }}
             >
               <Card
@@ -72,12 +72,11 @@ function Projects() {
             <motion.div
               whileHover={{
                 scale: 1.1,
+                transition: { duration: 0.3 },
               }}
-              onHoverStart={(e) => {}}
-              onHoverEnd={(e) => {}}
               variants={cardVariants}
               initial="hidden"
-              animate="visible"
+              animate={inView ? "visible" : "hidden"}
               transition={{ delay: 0.4 }}
             >
               <Card
@@ -90,12 +89,11 @@ function Projects() {
             <motion.div
               whileHover={{
                 scale: 1.1,
+                transition: { duration: 0.3 },
               }}
-              onHoverStart={(e) => {}}
-              onHoverEnd={(e) => {}}
               variants={cardVariants}
               initial="hidden"
-              animate="visible"
+              animate={inView ? "visible" : "hidden"}
               transition={{ delay: 0.6 }}
             >
               <Card
@@ -112,9 +110,8 @@ function Projects() {
                 <motion.div
                   whileHover={{
                     scale: 1.1,
+                    transition: { duration: 0.3 },
                   }}
-                  onHoverStart={(e) => {}}
-                  onHoverEnd={(e) => {}}
                   animate={{ opacity: inView ? 1 : 0, y: inView ? 0 : 20 }}
                   transition={{ duration: 0.75 }}
                   className="px-6 py-4 text-white font-bold font-inter text-sm bg-tropical-gradient rounded-full shadow  hover:bg-gray-800 inline-block"
@@ -127,12 +124,11 @@ function Projects() {
                 <motion.div
                   whileHover={{
                     scale: 1.1,
+                    transition: { duration: 0.3 },
                   }}
-                  onHoverStart={(e) => {}}
-                  onHoverEnd={(e) => {}}
                   variants={cardVariants}
                   initial="hidden"
-                  animate="visible"
+                  animate={inView ? "visible" : "hidden"}
                   transition={{ delay: 0.8 }}
                 >
                   <Card
@@ -145,12 +141,11 @@ function Projects() {
                 <motion.div
                   whileHover={{
                     scale: 1.1,
+                    transition: { duration: 0.3 },
                   }}
-                  onHoverStart={(e) => {}}
-                  onHoverEnd={(e) => {}}
                   variants={cardVariants}
                   initial="hidden"
-                  animate="visible"
+                  animate={inView ? "visible" : "hidden"}
                   transition={{ delay: 1 }}
                 >
                   <Card
@@ -164,11 +159,10 @@ function Projects() {
                   variants={cardVariants}
                   whileHover={{
                     scale: 1.1,
+                    transition: { duration: 0.3 },
                   }}
-                  onHoverStart={(e) => {}}
-                  onHoverEnd={(e) => {}}
                   initial="hidden"
-                  animate="visible"
+                  animate={inView ? "visible" : "hidden"}
                   transition={{ delay: 1.2 }}
                 >
                   <Card

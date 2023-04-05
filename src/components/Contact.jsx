@@ -1,11 +1,17 @@
 import React, { useRef } from "react";
 import emailjs from "@emailjs/browser";
 import Diamonds from "../assets/Diamonds.svg";
+import { useInView } from "react-intersection-observer";
+import { motion } from "framer-motion";
 
 function Contact() {
   const diamonds = `${Diamonds}?t=${Date.now()}`;
 
   const form = useRef();
+
+  const [ref, inView] = useInView({
+    threshold: 0.2,
+  });
 
   const sendEmail = (e) => {
     e.preventDefault();
@@ -28,9 +34,13 @@ function Contact() {
       );
   };
   return (
-    <div className="w-full flex justify-around px-6 py-8 md:py-20">
+    <div className="w-full flex justify-around px-6 py-8 " ref={ref}>
       <div className="flex justify-between flex-col  md:max-w-7xl md:flex-row">
-        <div className="md:w-1/2 md:flex md:flex-col md:justify-center">
+        <motion.div
+          className="md:w-1/2 md:flex md:flex-col md:justify-center"
+          animate={{ opacity: inView ? 1 : 0, y: inView ? 0 : 20 }}
+          transition={{ duration: 0.75 }}
+        >
           <h2 className="font-inter text-white font-black text-5xl mb-6 leading-loose">
             <span className="bg-tropical-gradient text-transparent bg-clip-text">
               Get in touch
@@ -124,9 +134,13 @@ function Contact() {
               </svg>
             </button>
           </div>
-        </div>
-        <div className="w-full relative items-center justify-center font-inter text-white text-xl font-bold py-4 md:w-1/2">
-          <form ref={form} onSubmit={sendEmail} >
+        </motion.div>
+        <motion.div
+          className="w-full relative items-center justify-center font-inter text-white text-xl font-bold py-4 md:w-1/2"
+          animate={{ opacity: inView ? 1 : 0, y: inView ? 0 : 20 }}
+          transition={{ duration: 0.75 }}
+        >
+          <form ref={form} onSubmit={sendEmail}>
             <label className="block py-4 ">Name</label>
             <input
               className="z-10 block w-full bg-white rounded-lg h-10 "
@@ -157,7 +171,7 @@ function Contact() {
             alt="Diamond bg"
             className="z-0 absolute top-10 w-full"
           ></img>
-        </div>
+        </motion.div>
       </div>
     </div>
   );
