@@ -18,5 +18,5 @@ module.exports = {
       },
     },
   },
-  plugins: [require("tailwindcss-font-inter"), require("tailwind-scrollbar")],
+  plugins: [require("tailwindcss-font-inter")],
 };
