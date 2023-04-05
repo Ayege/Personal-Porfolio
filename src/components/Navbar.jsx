@@ -110,7 +110,7 @@ export default function NavBar() {
               </li>
             </ul>
 
-            <div className="mt-3 space-y-2 lg:hidden md:inline-block md:hidden">
+            <div className="mt-3 space-y-2 lg:hidden md:inline-block">
               <motion.a
                 whileHover={{
                   scale: 1.1,
