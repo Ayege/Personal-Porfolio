@@ -116,7 +116,7 @@ function Projects() {
                   transition={{ duration: 0.75 }}
                   className="px-6 py-4 text-white font-bold font-inter text-sm bg-tropical-gradient rounded-full shadow  hover:bg-gray-800 inline-block"
                 >
-                  <a href="www.google.com">View more projects</a>
+                  <a href="https://github.com/Ayege/" aria-label="View more projects in github">View more projects</a>
                 </motion.div>
               </div>
             ) : (

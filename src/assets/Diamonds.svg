@@ -1,7 +1,7 @@
 <svg width="315" height="149" viewBox="0 0 315 149" fill="none" xmlns="http://www.w3.org/2000/svg">
-<rect id="path2" width="106.405" height="106.405" transform="matrix(0.730697 -0.682702 0.730697 0.682702 79.7498 74.6431)" stroke="#F6F8FD" stroke-width="2"/>
-<rect id="path1" width="106.405" height="106.405" transform="matrix(0.730697 -0.682702 0.730697 0.682702 157.5 74.6431)" stroke="#F6F8FD" stroke-width="2"/>
-<rect id="path3" width="106.405" height="106.405" transform="matrix(0.730697 -0.682702 0.730697 0.682702 2 74.6431)" stroke="#F6F8FD" stroke-width="2"/>
+<rect id="path2" width="106.405" height="106.405" transform="matrix(0.730697 -0.682702 0.730697 0.682702 79.7498 74.6431)" stroke="#FFFFFF" stroke-width="2"/>
+<rect id="path1" width="106.405" height="106.405" transform="matrix(0.730697 -0.682702 0.730697 0.682702 157.5 74.6431)" stroke="#FFFFFF" stroke-width="2"/>
+<rect id="path3" width="106.405" height="106.405" transform="matrix(0.730697 -0.682702 0.730697 0.682702 2 74.6431)" stroke="#FFFFFF" stroke-width="2"/>
 <style>
     #path1 {
       stroke-dasharray: 2000;

@@ -17,6 +17,7 @@ export default function NavBar() {
             </a>
             <div className="md:hidden">
               <button
+              aria-label ="Hamburger menu"
                 className="p-2 text-eerie-black bg-tropical-gradient rounded-2xl outline-none focus:border-gray-400 focus:border"
                 onClick={() => setNavbar(!navbar)}
               >

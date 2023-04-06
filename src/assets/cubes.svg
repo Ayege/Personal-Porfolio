@@ -7,10 +7,10 @@
 <path id="path1" d="M1.79794 178.755L27.3324 153.22" stroke="#F6F8FD" stroke-width="2"/>
 <rect id="path1" x="53.0689" y="27.346" width="100.138" height="100.138" stroke="#F6F8FD" stroke-width="2"/>
 <rect id="path1" x="78.6034" y="2" width="100.138" height="99.9494" stroke="#F6F8FD" stroke-width="2"/>
-<path id="path1" d="M52.628 26.9444L78.1862 1.5574" stroke="#F6F8FD" stroke-width="2"/>
-<path id="path1" d="M153.409 27.1439L178.943 1.60948" stroke="#F6F8FD" stroke-width="2"/>
-<path id="path1" d="M153.647 127.912L179.185 102.376" stroke="#F6F8FD" stroke-width="2"/>
-<path id="path1" d="M52.8669 127.686L78.4013 102.151" stroke="#F6F8FD" stroke-width="2"/>
+<path id="path1" d="M52.628 26.9444L78.1862 1.5574" stroke="#FFFFFF" stroke-width="2"/>
+<path id="path1" d="M153.409 27.1439L178.943 1.60948" stroke="#FFFFFF" stroke-width="2"/>
+<path id="path1" d="M153.647 127.912L179.185 102.376" stroke="#FFFFFF" stroke-width="2"/>
+<path id="path1" d="M52.8669 127.686L78.4013 102.151" stroke="#FFFFFF" stroke-width="2"/>
 <style>
     #path1 {
       stroke-dasharray: 2000;
