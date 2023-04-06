@@ -1,6 +1,7 @@
 {
   "name": "ayege",
   "version": "0.1.0",
+  "homepage": "http://ayege.frikiao.com",
   "private": true,
   "dependencies": {
     "@emailjs/browser": "^3.10.0",
