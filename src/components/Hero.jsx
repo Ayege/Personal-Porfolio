@@ -6,13 +6,13 @@ import { motion } from "framer-motion";
 import line from "../assets/lines.svg";
 import { useInView } from "react-intersection-observer";
 
+
 function Hero() {
   const matches = useMediaQuery("(min-width: 475px)");
   const lines = `${line}?t=${Date.now()}`;
   const [ref, inView] = useInView({
-    threshold: 0.2, 
+    threshold: 0.2,
   });
-
 
   return (
     <div
@@ -22,9 +22,9 @@ function Hero() {
       <img
         src={lines}
         alt="background lines"
-        className="z-0 absolute md:h-[43em] md:top-[-5rem] md:right-0"
+        className="z-10 absolute md:h-[43em] md:top-[-5rem] md:right-0"
       ></img>
-      <div className="z-10 flex justify-between flex-col-reverse  md:max-w-7xl lg:flex-row md:flex-row ">
+      <div className="flex justify-between flex-col-reverse  md:max-w-7xl lg:flex-row md:flex-row ">
         <motion.div
           className="md:w-2/5"
           animate={{ opacity: inView ? 1 : 0, y: inView ? 0 : 20 }}
@@ -64,12 +64,12 @@ function Hero() {
               onHoverEnd={(e) => {}}
               className="px-6 py-3 text-white font-bold font-inter text-sm bg-vermillion rounded-full shadow hover:bg-tropical-gradient inline-block"
             >
-              <a href="www.google.com">View Projects</a>
+              <a href="https://github.com/Ayege">View Projects</a>
             </motion.div>
           </div>
         </motion.div>
         <motion.div
-          className="w-fit py-[-150px] ml-5 mb-6 md:m-auto"
+          className="w-fit py-[-150px] z-10 ml-5 mb-6 md:m-auto"
           animate={{ x: [-100, 0] }}
           transition={{ ease: "easeOut", duration: 0.75 }}
         >
