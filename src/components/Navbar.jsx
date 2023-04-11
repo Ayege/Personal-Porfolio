@@ -1,5 +1,7 @@
 import { useState } from "react";
 import { motion } from "framer-motion";
+import { HashLink } from "react-router-hash-link";
+
 
 
 
@@ -18,7 +20,7 @@ export default function NavBar() {
             </a>
             <div className="md:hidden">
               <button
-              aria-label ="Hamburger menu"
+                aria-label="Hamburger menu"
                 className="p-2 text-eerie-black bg-tropical-gradient rounded-2xl outline-none focus:border-gray-400 focus:border"
                 onClick={() => setNavbar(!navbar)}
               >
@@ -71,7 +73,9 @@ export default function NavBar() {
                   onHoverStart={(e) => {}}
                   onHoverEnd={(e) => {}}
                 >
-                  About Me
+                  <HashLink smooth to="/#about">
+                    About Me
+                  </HashLink>
                 </motion.div>
               </li>
               <li className="text-white font-inter font-semibold hover:text-amber">
@@ -83,7 +87,9 @@ export default function NavBar() {
                   onHoverStart={(e) => {}}
                   onHoverEnd={(e) => {}}
                 >
-                  Skills
+                  <HashLink smooth to="/#skills">
+                    Skills
+                  </HashLink>
                 </motion.div>
               </li>
               <li className="text-white font-inter font-semibold hover:text-yellow-green">
@@ -95,7 +101,9 @@ export default function NavBar() {
                   onHoverStart={(e) => {}}
                   onHoverEnd={(e) => {}}
                 >
-                  Projects
+                  <HashLink smooth to="/#projects">
+                    Projects
+                  </HashLink>
                 </motion.div>
               </li>
               <li className="text-white font-inter font-semibold hover:text-vermillion">
@@ -107,7 +115,9 @@ export default function NavBar() {
                   onHoverStart={(e) => {}}
                   onHoverEnd={(e) => {}}
                 >
-                  Contact Me
+                  <HashLink smooth to="/#contact">
+                    Contact Me
+                  </HashLink>
                 </motion.div>
               </li>
             </ul>
@@ -121,7 +131,9 @@ export default function NavBar() {
                 onHoverEnd={(e) => {}}
                 className="inline-block w-full px-4 py-2 text-center font-inter text-sm font-bold text-eerie-black bg-tropical-gradient rounded-full shadow hover:bg-gray-800"
               >
-                <a href="www.google.com">Let's Talk</a>
+                <HashLink smooth to="/#contact">
+                  Let's Talk
+                </HashLink>
               </motion.a>
             </div>
           </div>
@@ -135,7 +147,9 @@ export default function NavBar() {
             onHoverEnd={(e) => {}}
             className="px-6 py-3 text-eerie-black font-bold font-inter text-sm bg-tropical-gradient rounded-full shadow hover:bg-gray-800"
           >
-            <a href="www.google.com">Let's Talk</a>
+            <HashLink smooth to="/#contact">
+              Let's Talk
+            </HashLink>
           </motion.div>
         </div>
       </div>

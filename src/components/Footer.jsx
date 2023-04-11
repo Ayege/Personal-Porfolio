@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { motion } from "framer-motion";
+import { HashLink } from "react-router-hash-link";
 
 function Footer() {
   const [footer] = useState(false);
@@ -28,7 +29,9 @@ function Footer() {
                   onHoverStart={() => {}}
                   onHoverEnd={() => {}}
                 >
-                  About Me
+                  <HashLink smooth to="/#about">
+                    About Me
+                  </HashLink>
                 </motion.div>
               </li>
               <li className="text-white font-inter font-semibold hover:text-amber">
@@ -37,7 +40,9 @@ function Footer() {
                   onHoverStart={() => {}}
                   onHoverEnd={() => {}}
                 >
-                  Skills
+                  <HashLink smooth to="/#skills">
+                    Skills
+                  </HashLink>
                 </motion.div>
               </li>
               <li className="text-white font-inter font-semibold hover:text-yellow-green">
@@ -46,7 +51,9 @@ function Footer() {
                   onHoverStart={() => {}}
                   onHoverEnd={() => {}}
                 >
-                  Projects
+                  <HashLink smooth to="/#projects">
+                    Projects
+                  </HashLink>
                 </motion.div>
               </li>
               <li className="text-white font-inter font-semibold hover:text-vermillion">
@@ -55,7 +62,9 @@ function Footer() {
                   onHoverStart={() => {}}
                   onHoverEnd={() => {}}
                 >
-                  Contact Me
+                  <HashLink smooth to="/#contact">
+                    Contact Me
+                  </HashLink>
                 </motion.div>
               </li>
             </ul>

@@ -67,7 +67,7 @@ function Contact() {
   };
 
   return (
-    <div className="w-full flex justify-around px-6 py-8 " ref={ref}>
+    <div id="contact" className="w-full flex justify-around px-6 py-8 " ref={ref}>
       <div className="flex justify-between flex-col  md:max-w-7xl md:flex-row">
         <motion.div
           className="md:w-1/2 md:flex md:flex-col md:justify-center"

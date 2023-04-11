@@ -23,6 +23,7 @@ function Skills() {
 
   return (
     <div
+      id="skills"
       className="w-full relative flex justify-around py-8 px-6 md:py-20"
       ref={ref}
     >

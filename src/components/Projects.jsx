@@ -29,6 +29,7 @@ function Projects() {
 
   return (
     <div
+      id="projects"
       className="w-full flex justify-around relative px-6 py-8 md:pt-24 md:pb-40"
       ref={ref}
     >
@@ -116,7 +117,12 @@ function Projects() {
                   transition={{ duration: 0.75 }}
                   className="px-6 py-4 text-white font-bold font-inter text-sm bg-tropical-gradient rounded-full shadow  hover:bg-gray-800 inline-block"
                 >
-                  <a href="https://github.com/Ayege/" aria-label="View more projects in github">View more projects</a>
+                  <a
+                    href="https://github.com/Ayege/"
+                    aria-label="View more projects in github"
+                  >
+                    View more projects
+                  </a>
                 </motion.div>
               </div>
             ) : (
