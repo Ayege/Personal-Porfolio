@@ -36,7 +36,7 @@ function Skills() {
         <motion.h3
           className="z-10 font-inter font-black bg-tropical-gradient text-transparent bg-clip-text pb-10 text-5xl md:w-2/6 md:pr-20"
           ref={ref}
-          initial={{ x: -500 }} // start position of image
+          initial={{ x: -200 }} // start position of image
           transition={{ duration: 0.5 }} // animation duration
           animate={inView ? { x: 0 } : { x: -200 }}
         >
