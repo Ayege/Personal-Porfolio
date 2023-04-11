@@ -9,11 +9,9 @@ function Footer() {
     <div className="w-full flex justify-around px-6 py-8 border-t-2 border-t-white md:py-10">
       <div className="flex justify-between flex-col w-full md:max-w-7xl md:flex-row">
         <div className="font-inter w-full md:w-2/6">
-          <a href="www.google.com">
-            <h2 className="text-2xl font-bold text-white font-inter">
-              A<span className="text-vermillion">.</span>Yege
-            </h2>
-          </a>
+          <h2 className="text-2xl font-bold text-white font-inter">
+            A<span className="text-vermillion">.</span>Yege
+          </h2>
           <p className="text-white">Created by Ayesha© | All Reserved!</p>
         </div>
         <div className="md:w-3/6">
