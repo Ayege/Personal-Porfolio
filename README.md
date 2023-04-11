@@ -33,6 +33,7 @@ https://www.figma.com/file/vvwfALwxTkvaijdwbKS8N2/Personal-Porfolio?node-id=0%3A
 
 - Home section with a brief introduction, skills, and a call-to-action section.
 - About section with information about me, my education, and work experience.
+- Skills section showing all my fullstack abilities.
 - Projects section showcasing my recent projects with details and links.
 - Contact section with a contact form and social media links.
 
@@ -42,6 +43,9 @@ https://www.figma.com/file/vvwfALwxTkvaijdwbKS8N2/Personal-Porfolio?node-id=0%3A
 - Tailwind CSS
 - React Router
 - Framer Motion
+- EmailJs
+- React-intersection-observer
+- React-router-hash-link
 
 ## Licence
 
