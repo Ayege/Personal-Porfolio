@@ -16,7 +16,9 @@ function Card(props) {
         <h4 className="text-xl font-semibold tracking-tight text-justify text-white">
           {props.title}
         </h4>
-        <p className="mb-2 leading-normal text-white">{props.text}</p>
+        <p className="mb-2 leading-normal text-justify text-white">
+          {props.text}
+        </p>
       </div>
     </div>
   );

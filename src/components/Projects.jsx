@@ -5,6 +5,7 @@ import { motion } from "framer-motion";
 import Ulticabinet from "../assets/Ulticabinet.png";
 import MPL from "../assets/MPL.png";
 import Lucky7 from "../assets/Lucky7.png";
+import PersonalPorfolio from "../assets/PersonalPorfolio.png"
 import { useInView } from "react-intersection-observer";
 
 function Projects() {
@@ -84,7 +85,7 @@ function Projects() {
                 color="#8BC34A"
                 title="Movimiento Profesionales con Leonel"
                 img={MPL}
-                text="This is a Worpress with Elementor site of a local politician with functional forms and responsive design."
+                text="This is a Worpress with Elementor site of a politician with functional forms and responsive design. This website includes interactive forms."
               ></Card>
             </motion.div>
             <motion.div
@@ -139,9 +140,9 @@ function Projects() {
                 >
                   <Card
                     color="#FFC107"
-                    title="Movimiento Profesionales con Leonel"
-                    img={MPL}
-                    text="This is a Worpress with Elementor site of a local politician with functional forms and responsive design."
+                    title="Ayesha - Personal Portfolio Website"
+                    img={PersonalPorfolio}
+                    text="This project is a personal portfolio website designed in Figma and built using React and Tailwind. It is powered by React Router, Tailwind CSS, Framer Motion and else."
                   ></Card>
                 </motion.div>
                 <motion.div
