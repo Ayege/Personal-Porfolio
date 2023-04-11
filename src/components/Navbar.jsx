@@ -13,11 +13,9 @@ export default function NavBar() {
       <div className="justify-between px-6 mx-auto lg:px-14  md:items-center md:flex md:px-8">
         <div>
           <div className="flex items-center justify-between py-3 md:py-5 md:block">
-            <a href="www.google.com">
               <h2 className="text-2xl font-bold text-white font-inter">
                 A<span className="text-vermillion">.</span>Yege
               </h2>
-            </a>
             <div className="md:hidden">
               <button
                 aria-label="Hamburger menu"
