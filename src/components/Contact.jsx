@@ -67,7 +67,11 @@ function Contact() {
   };
 
   return (
-    <div id="contact" className="w-full flex justify-around px-6 py-8 " ref={ref}>
+    <div
+      id="contact"
+      className="w-full flex justify-around px-6 py-8 "
+      ref={ref}
+    >
       <div className="flex justify-between flex-col  md:max-w-7xl md:flex-row">
         <motion.div
           className="md:w-1/2 md:flex md:flex-col md:justify-center"
@@ -230,7 +234,7 @@ function Contact() {
               type="email"
               aria-label="Email Input"
               name="user_email"
-              className="block w-full rounded-lg h-10"
+              className="block w-full rounded-lg h-10 text-black"
             />
             <input type="text" name="honey" style={{ display: "none" }} />
             <label for="Message" className="block w-full py-4">
