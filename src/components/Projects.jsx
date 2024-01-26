@@ -5,7 +5,8 @@ import { motion } from "framer-motion";
 import Ulticabinet from "../assets/Ulticabinet.png";
 import MPL from "../assets/MPL.png";
 import Lucky7 from "../assets/Lucky7.png";
-import PersonalPorfolio from "../assets/PersonalPorfolio.png"
+import PersonalPorfolio from "../assets/PersonalPorfolio.png";
+import ETL from "../assets/ETL.png";
 import { useInView } from "react-intersection-observer";
 
 function Projects() {
@@ -65,6 +66,7 @@ function Projects() {
               transition={{ delay: 0.2 }}
             >
               <Card
+                link="https://ulticabinet.com/"
                 color="#1DC9FF"
                 img={Ulticabinet}
                 title="Ulticabinet.com"
@@ -82,6 +84,7 @@ function Projects() {
               transition={{ delay: 0.4 }}
             >
               <Card
+                link="https://mpl.do/"
                 color="#8BC34A"
                 title="Movimiento Profesionales con Leonel"
                 img={MPL}
@@ -156,10 +159,12 @@ function Projects() {
                   transition={{ delay: 1 }}
                 >
                   <Card
+                    link="https://github.com/Ayege/ETLPacientes"
                     color="#00759D"
-                    img={MPL}
-                    title="Lucky7 - Tattoo Studio"
-                    text="Responsive web app built using Node.js, Express, Bootstrap and designed in Bootstrap Studio 5 that allows users to schedule their appointments."
+                    img={ETL}
+                    title="ETL - Pacientes"
+                    text="
+                    It is a .txt, .xls, .csv and SQL data extractor for patient records of a clinic, the example cases have been attached. The ETL then reads each data source and inserts the records in an organized manner to the corresponding field in a single SQL table in the database. It was carried out using SQL Server Data Tools."
                   ></Card>
                 </motion.div>
                 <motion.div
