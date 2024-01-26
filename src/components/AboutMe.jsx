@@ -67,7 +67,10 @@ function AboutMe() {
               transition={{ duration: 0.75 }}
               className="px-6 py-3 text-white font-bold font-inter text-sm bg-tropical-gradient rounded-full shadow hover:bg-gray-800 inline-block"
             >
-              <a href="../assets/Ayesha Yege - PM and Web Dev.pdf" download>
+              <a
+                href="../assets/Ayesha Yege CV.pdf"
+                download="Ayesha Yege CV.pdf"
+              >
                 Download CV
               </a>
             </motion.div>

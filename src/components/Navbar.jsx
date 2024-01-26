@@ -2,20 +2,17 @@ import { useState } from "react";
 import { motion } from "framer-motion";
 import { HashLink } from "react-router-hash-link";
 
-
-
-
 export default function NavBar() {
   const [navbar, setNavbar] = useState(false);
 
   return (
-    <nav className="w-full z-20 relative ">
-      <div className="justify-between px-6 mx-auto lg:px-14  md:items-center md:flex md:px-8">
+    <nav className="w-full z-20 relative justify-around">
+      <div className="max-w-7xl py-4 justify-between px-6 mx-auto lg:px-14  md:items-center md:flex md:px-8">
         <div>
           <div className="flex items-center justify-between py-3 md:py-5 md:block">
-              <h2 className="text-2xl font-bold text-white font-inter">
-                A<span className="text-vermillion">.</span>Yege
-              </h2>
+            <h2 className="text-2xl font-bold text-white font-inter">
+              A<span className="text-vermillion">.</span>Yege
+            </h2>
             <div className="md:hidden">
               <button
                 aria-label="Hamburger menu"
