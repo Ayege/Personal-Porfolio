@@ -42,7 +42,7 @@ function Projects() {
       ></img>
       <div className="flex flex-col w-full md:max-w-7xl">
         <div>
-          <h2 className="font-inter text-white font-black text-5xl mb-6 leading-loose">
+          <h2 className="font-inter text-white font-black text-5xl mb-6 leading-loose py-4">
             <motion.span
               className="bg-tropical-gradient text-transparent bg-clip-text"
               animate={{ opacity: inView ? 1 : 0, y: inView ? 0 : 20 }}
@@ -59,7 +59,7 @@ function Projects() {
               variants={cardVariants}
               whileHover={{
                 scale: 1.1,
-                transition: { duration: 0.3 },
+                transition: { duration: 0.2 },
               }}
               initial="hidden"
               animate={inView ? "visible" : "hidden"}
@@ -76,7 +76,7 @@ function Projects() {
             <motion.div
               whileHover={{
                 scale: 1.1,
-                transition: { duration: 0.3 },
+                transition: { duration: 0.2 },
               }}
               variants={cardVariants}
               initial="hidden"
@@ -94,7 +94,7 @@ function Projects() {
             <motion.div
               whileHover={{
                 scale: 1.1,
-                transition: { duration: 0.3 },
+                transition: { duration: 0.2 },
               }}
               variants={cardVariants}
               initial="hidden"
@@ -115,7 +115,7 @@ function Projects() {
                 <motion.div
                   whileHover={{
                     scale: 1.1,
-                    transition: { duration: 0.3 },
+                    transition: { duration: 0.2 },
                   }}
                   animate={{ opacity: inView ? 1 : 0, y: inView ? 0 : 20 }}
                   transition={{ duration: 0.75 }}
@@ -134,7 +134,7 @@ function Projects() {
                 <motion.div
                   whileHover={{
                     scale: 1.1,
-                    transition: { duration: 0.3 },
+                    transition: { duration: 0.2 },
                   }}
                   variants={cardVariants}
                   initial="hidden"
@@ -142,6 +142,7 @@ function Projects() {
                   transition={{ delay: 0.8 }}
                 >
                   <Card
+                    link="https://ayege.github.io/Personal-Porfolio/"
                     color="#FFC107"
                     title="Ayesha - Personal Portfolio Website"
                     img={PersonalPorfolio}
@@ -151,7 +152,7 @@ function Projects() {
                 <motion.div
                   whileHover={{
                     scale: 1.1,
-                    transition: { duration: 0.3 },
+                    transition: { duration: 0.2 },
                   }}
                   variants={cardVariants}
                   initial="hidden"
