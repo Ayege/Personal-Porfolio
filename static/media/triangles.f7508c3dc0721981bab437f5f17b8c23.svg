@@ -1,0 +1,18 @@
+<svg width="204" height="204" viewBox="0 0 204 204" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path id="path1" d="M1 203V3L201 203H1Z" stroke="#FFFFFF" stroke-width="2"/>
+<path id="path1" d="M42.9753 161.436V3.41138L201 161.436H42.9753Z" stroke="#FFFFFF" stroke-width="2"/>
+<style>
+    #path1 {
+      stroke-dasharray: 2000;
+      stroke-dashoffset: 2000;
+      animation: dash 5s linear forwards;
+    }
+
+    @keyframes dash {
+      to {
+        stroke-dashoffset: 0;
+      }
+    }
+
+</style>
+</svg>
